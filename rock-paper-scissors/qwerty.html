@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="qwerty.css">
+    </style>
+
+    <title>objects</title>
+</head>
+<body> 
+    <p class="tittle">Rock Paper Scissors</p>
+
+    <button onclick = "playGame('rock');" class="move-btn"><img src="emojis/rock-emoji.png" class="move-icon"> </button>
+    <button onclick="playGame('paper');" class="move-btn"> <img src="emojis/paper-emoji.png" alt="" class="move-icon"></button>
+    <button onclick="playGame('scissors');" class="move-btn"><img src="emojis/scissors-emoji.png" class="move-icon"></button>
+
+    <p class="js-result result"></p>
+    <p class="js-moves"></p>
+    <p class="js-score score"></p>
+
+    
+
+    <button onclick=" score.wins = 0; score.losses=0; score.ties = 0; localStorage.removeItem('score'); updateScoreElement(); " class="reset-score-btn">Reset Score</button>
+
+    <script src="qwerty.js">
+
+        
+
+    </script>
+</body>
+</html>
